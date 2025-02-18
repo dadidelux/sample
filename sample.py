@@ -6,7 +6,7 @@ def fetch_data():
     try:
         # Establish connection
         conn = pyodbc.connect(
-            f'DRIVER={{SQL Server}};SERVER={HOST_pf};DATABASE={DB_pf};UID={USER_pf};PWD={PW_pf}'
+            f'DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={HOST_pf};DATABASE={DB_pf};UID={USER_pf};PWD={PW_pf}'
         )
         cursor = conn.cursor()
 
